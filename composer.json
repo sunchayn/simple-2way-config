@@ -1,0 +1,42 @@
+{
+    "name": "mazentouati/simple-2way-config",
+    "description": "Simple 2 way (read/write) php-based configuration.",
+    "type": "library",
+    "keywords": ["php", "simple-2way-config", "configuration", "config"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mazen Touati",
+            "email": "mazen_touati@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MazenTouati\\Simple2wayConfig\\": "src/"
+        },
+        "files": ["src/helpers.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MazenTouati\\Simple2wayConfig\\Test\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "squizlabs/php_codesniffer": "^3.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        }
+    },
+    "scripts": {
+        "test": "vendor\\bin\\phpunit --coverage-text --coverage-clover coverage.xml",
+        "check": "phpcs",
+        "fixstyle": "phpcbf"
+    }
+}
