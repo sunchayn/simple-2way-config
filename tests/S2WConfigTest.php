@@ -50,14 +50,14 @@ class S2WConfigTest extends TestCase
     public function testSync()
     {
 
-        // it can sync news value with a source file
+        // it can sync new value with a source file
         $config = S2WConfigFactory::create($this->path);
         $config->set('database.drivers.mysql.password', 'new_password');
         $config->sync('database');
         $config = S2WConfigFactory::create($this->path);
         $this->assertSame('new_password', $config->get('database.drivers.mysql.password'));
 
-        // it can sync all files, i don't include news files to keep the directory clean
+        // it can sync all files, i don't include new files to keep the directory clean
         $config->set('database.drivers.mysql.password', 'your_password');
         $config->sync();
 
