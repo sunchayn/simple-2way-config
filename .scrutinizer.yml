@@ -2,3 +2,17 @@ tools:
   php_code_sniffer:
     config:
       standard: "PSR2"
+build:
+  nodes:
+    coverage:
+      tests:
+        override:
+          - command: "vendor/bin/phpunit --coverage-clover coverage.xml"
+            coverage:
+              file: "coverage.xml"
+              format: "clover"
+
+    analysis:
+      tests:
+        override:
+          - php-scrutinizer-run
