@@ -6,6 +6,7 @@
 [![Scrutinizer CI](https://img.shields.io/scrutinizer/g/mazentouati/simple-2way-config.svg?style=flat-square)](https://scrutinizer-ci.com/g/mazentouati/simple-2way-config/?branch=master)
 [![Codecov branch](https://img.shields.io/codecov/c/github/mazentouati/simple-2way-config/master.svg?style=flat-square)](https://codecov.io/gh/mazentouati/simple-2way-config)
 [![StyleCI](https://styleci.io/repos/157292080/shield)](https://styleci.io/repos/157292080)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8f71ba0353635c7f4350/maintainability)](https://codeclimate.com/github/mazentouati/simple-2way-config/maintainability)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](./LICENSE)
 
 
