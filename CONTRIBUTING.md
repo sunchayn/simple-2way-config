@@ -30,23 +30,18 @@ composer install -o
 ### Moving forward
 
 ```sh
-# Open simple-2way-config in IDE
-subl simple-2way-config
-
-# ... and do the needful
-
-# Optionally run the lint
-for P in src tests; do find $P -type f -name '*.php' -exec php -l {} \;; done
-
-# ... and phpcs fixer or stuffs like that!
-
 # Run tests
-vendor/bin/phpunit --coverage-text
+composer test
 
+# Run php code sniffer tokenizer
+composer check
+
+# Run php code sniffer beautifier
+composer fixstyle
 
 # If your feature takes long your dev branch might be out of sync, you may want to
 git checkout $branch_name
-git pull upstream master # branch could be something else than master
+git pull upstream master  # branch could be something else than master
 ```
 
 ### Finalizing
