@@ -63,7 +63,6 @@ class S2WConfigTest extends TestCase
 
         // it throw an Exception when sync backup fail
         $config = S2WConfigFactory::create($this->path);
-        // $config->set('custom.key.option', false);
         disableCopy();
         $this->expectException(S2WConfigException::class);
         $config->sync('database');
